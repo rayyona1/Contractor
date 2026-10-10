@@ -284,8 +284,7 @@ li {
   .about__content__img .img {
     -o-object-fit: cover;
        object-fit: cover;
-    min-width: 400px;
-    height: 600px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
