@@ -5,8 +5,10 @@
     background-size: cover;
     display: flex;
     align-items: center;
+
     @media (max-width: 767px) {
-        height: 500px;
+        height: auto;
+        padding: 100px 0px 50px;
     }
 
     &__content {
@@ -14,19 +16,18 @@
         flex-direction: column;
         gap: 16px;
         align-items: center;
-        @media (max-width: 767px) {
-            margin: 50px;
-            gap: 8px;
-        }
+
         &__title {
             text-align: center;
             @include title($white, 400);
         }
+
         &__text {
             text-align: center;
             max-width: 750px;
             @include text($white, 400);
         }
+
         &__wrap {
             display: flex;
             gap: 28px;
@@ -34,38 +35,47 @@
             @media (max-width: 575px) {
                 width: 100%;
                 flex-direction: column;
+                gap: 10px;
             }
+
             .link:nth-child(1) {
                 padding: 25px 38px;
                 background-color: $orange;
                 border: 2px solid $orange;
                 color: $white;
+
                 @media (max-width: 767px) {
                     padding: 10px 20px;
                 }
+
                 &:hover {
                     color: $orange;
                     background-color: $white;
                     transition: $tr;
                 }
+
                 @media (max-width: 575px) {
                     width: 100%;
                     text-align: center;
                 }
             }
+
             .link:nth-child(2) {
                 padding: 25px 38px;
                 background-color: $white;
                 border: 2px solid $white;
                 color: $black;
+
                 @media (max-width: 767px) {
                     padding: 10px 20px;
                 }
+
                 &:hover {
                     color: $white;
                     background-color: $black;
                     transition: $tr;
                 }
+
                 @media (max-width: 575px) {
                     width: 100%;
                     text-align: center;

@@ -126,7 +126,8 @@ li {
 }
 @media (max-width: 767px) {
   .intro {
-    height: 500px;
+    height: auto;
+    padding: 100px 0px 50px;
   }
 }
 .intro__content {
@@ -134,12 +135,6 @@ li {
   flex-direction: column;
   gap: 16px;
   align-items: center;
-}
-@media (max-width: 767px) {
-  .intro__content {
-    margin: 50px;
-    gap: 8px;
-  }
 }
 .intro__content__title {
   text-align: center;
@@ -187,6 +182,7 @@ li {
   .intro__content__wrap {
     width: 100%;
     flex-direction: column;
+    gap: 10px;
   }
 }
 .intro__content__wrap .link:nth-child(1) {
