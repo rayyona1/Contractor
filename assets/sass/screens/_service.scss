@@ -1,0 +1,93 @@
+.service {
+    padding: 80px 0px;
+    height: 500px;
+    background-image: url('../../img/home/service.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+        height: 400px;
+    }
+    @media (max-width: 575px) {
+        height: 350px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        @media (max-width: 767px) {
+            gap: 30px;
+        }
+        @media (max-width: 575px) {
+            gap: 25px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width: 767px) {
+                gap: 15px;
+            }
+            @media (max-width: 575px) {
+                gap: 10px;
+            }
+            .title {
+                @include title($black, 400);
+            }
+            .text {
+                @include text($black, 400);
+            }
+        }
+        &__wrap {
+            display: flex;
+            gap: 28px;
+            @media (max-width: 767px) {
+                gap: 22px;
+            }
+            @media (max-width: 575px) {
+                gap: 16px;
+                flex-direction: column;
+            }
+
+            
+            .link:nth-child(1) {
+                padding: 25px 38px;
+                background-color: $orange;
+                border: 2px solid $orange;
+                color: $white;
+                @media (max-width: 767px) {
+                    padding: 10px 20px;
+                }
+                &:hover {
+                    color: $orange;
+                    background-color: $white;
+                    transition: $tr;
+                }
+                @media (max-width: 575px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .link:nth-child(2) {
+                padding: 25px 38px;
+                background-color: $white;
+                border: 2px solid $black;
+                color: $black;
+                @media (max-width: 767px) {
+                    padding: 10px 20px;
+                }
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                    transition: $tr;
+                }
+                @media (max-width: 575px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
