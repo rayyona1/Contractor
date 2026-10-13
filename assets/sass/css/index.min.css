@@ -568,105 +568,54 @@ li {
 .blog__content__info {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
-@media (max-width: 991px) {
-  .blog__content__info {
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 767px) {
-  .blog__content__info {
-    gap: 15px;
-  }
-}
-.blog__content__info .left {
+.blog__content__info .item {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 27px;
 }
-.blog__content__info .left__img {
+.blog__content__info .item__img {
+  min-width: 200px;
+  flex: 1;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 568px;
-  height: 568px;
 }
-@media (max-width: 991px) {
-  .blog__content__info .left__img {
-    width: 500px;
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.blog__content__info .item__wrap {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-@media (max-width: 767px) {
-  .blog__content__info .left__img {
-    width: 400px;
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-.blog__content__info .left__text {
+.blog__content__info .item__wrap__text {
   font-size: 18px;
   font-weight: 400;
   color: #000000;
 }
 @media (max-width: 767px) {
-  .blog__content__info .left__text {
+  .blog__content__info .item__wrap__text {
     font-size: 15px;
   }
 }
+.blog__content__info .left {
+  min-width: 300px;
+  flex: 1.5;
+}
+.blog__content__info .left .item__img {
+  min-width: 450px;
+}
+.blog__content__info .left .item__wrap {
+  min-width: 300px;
+}
 .blog__content__info .right {
+  min-width: 300px;
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
-}
-@media (max-width: 991px) {
-  .blog__content__info .right {
-    flex-wrap: wrap;
-  }
-}
-.blog__content__info .right__wrap {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .blog__content__info .right__wrap {
-    flex-wrap: wrap;
-  }
-}
-.blog__content__info .right__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 224px;
-  height: 224px;
-}
-@media (max-width: 991px) {
-  .blog__content__info .right__img {
-    width: 500px;
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 767px) {
-  .blog__content__info .right__img {
-    width: 400px;
-    height: 400px;
-  }
-}
-@media (max-width: 575px) {
-  .blog__content__info .right__img {
-    width: 300px;
-    height: 300px;
-  }
-}
-.blog__content__info .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .service {
