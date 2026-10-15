@@ -571,7 +571,7 @@ li {
   flex-wrap: wrap;
 }
 .blog__content__info .item {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
