@@ -1,0 +1,28 @@
+.choose {
+    padding: 70px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        &__top {
+            display: flex;
+            gap: 82px;
+            align-items: center;
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .sub{
+                    @include subtitle($orange,400) 
+                }
+                .title{
+                    @include content()
+                }
+
+            }
+
+        }
+    }
+}
